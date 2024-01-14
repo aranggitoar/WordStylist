@@ -65,7 +65,7 @@ def main():
     parser.add_argument('--mix_rate', type=int, default=1)
     parser.add_argument('--stable_dif_path', type=str, default='runwayml/stable-diffusion-v1-5')
     parser.add_argument('--models_path', type=str, default='/path/to/trained/models')
-    parser.add_argument('--words', type=list, default=['hello', 'MOVE'])
+    parser.add_argument('--words', type=str, nargs='+', default=['hello', 'MOVE'])
 
     args = parser.parse_args()
 
